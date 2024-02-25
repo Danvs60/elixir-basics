@@ -18,7 +18,6 @@ defmodule RPG.CharacterSheet do
   def run() do
     welcome()
     character = %{name: ask_name(), class: ask_class(), level: ask_level()}
-    IO.write("Your character: ")
-    IO.inspect(character)
+    IO.inspect(character, label: "Your character")
   end
 end
